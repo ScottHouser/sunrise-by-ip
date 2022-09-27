@@ -8,6 +8,8 @@ The MVP of this project took about 3 hours to complete. The full app including s
 
 After some experimentation I decided to use the [React Query Module] (https://www.npmjs.com/package/react-query) to complete the project. React Query makes interdependent API calls with stateful logic extreemly simple. Writing manual fetch logic for interdependent calls can be time consuming and error prone. I try to use the best tools available when approaching a given task.
 
+The majority of the code for evaluation is in `src/App.js`
+
 To use the app, simply type a valid ip address into the input bar.
 
 
