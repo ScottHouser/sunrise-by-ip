@@ -18,13 +18,13 @@ export default function HalfSun(props) {
       return(
         <>
           <p className='sun-label'>{props.title}</p>
-          <h1 className='time-display'>{trimTime(props.timeDisplay)}</h1>
+          <h1 className='time-display'>{props.timeDisplay}</h1>
         </>
       )
       }else{
         return(
           <>
-            <h1 className='time-display'>{trimTime(props.timeDisplay)}</h1>
+            <h1 className='time-display'>{props.timeDisplay}</h1>
             <p className='sun-label'>{props.title}</p>
           </>
         )

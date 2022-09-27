@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
-import './App.css';
 import { QueryClient, QueryClientProvider, useQuery } from '@tanstack/react-query'
+import moment from 'moment';
 import Form from 'react-bootstrap/Form';
 import HalfSun from './Components/HalfSun';
+import './App.css';
 
 
 const queryClient = new QueryClient()
@@ -18,7 +19,7 @@ function DataFetcher() {
   )
 
   const { data : sunData } = useQuery(['getSunrise', locationData], () =>
-    fetch(`https://api.sunrise-sunset.org/json?lat=${locationData?.data?.location?.latitude}&lng=${locationData?.data?.location?.longitude}&date=today`).then(res =>
+    fetch(`https://api.sunrise-sunset.org/json?lat=${locationData?.data?.location?.latitude}&lng=${locationData?.data?.location?.longitude}&date=today&formatted=0`).then(res =>
       res.json()
     ),{enabled: !!locationData && !!ip}
   )
@@ -40,6 +41,15 @@ function DataFetcher() {
     }
   }
 
+  const returnFormatedDate = (input) => {
+    if(input){
+      const dateObj = new Date(input);
+      return(moment(dateObj).format('hh:mm A'))
+    }else{
+      return '';
+    }
+  }
+
   return (
     <>
       <Form>
@@ -50,13 +60,13 @@ function DataFetcher() {
       </Form>
       <HalfSun
         title={'sunrise'}
-        timeDisplay={sunData?.results?.sunrise}
+        timeDisplay={returnFormatedDate(sunData?.results?.sunrise)}
         isSunUp
       />
       <div className='spacer'/>
       <HalfSun
         title={'sunset'}
-        timeDisplay={sunData?.results?.sunset}
+        timeDisplay={returnFormatedDate(sunData?.results?.sunset)}
         isSunUp={false}
       />
     </>
