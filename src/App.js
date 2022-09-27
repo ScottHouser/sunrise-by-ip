@@ -7,7 +7,7 @@ import HalfSun from './Components/HalfSun';
 
 const queryClient = new QueryClient()
 
-function DataFetcher(props) {
+function DataFetcher() {
   const [ip, setIp] = useState('')
   const [isValidIp, setIsValidIp] = useState(false)
 
