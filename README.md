@@ -6,8 +6,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 The MVP of this project took about 3 hours to complete. The full app including styles, refactoring, and writeups took about 6 hours.
 
-After some exerimentation I decided to use the [React Query Module] (https://www.npmjs.com/package/react-query) to complete the project. React Querey makes interdependent API calls with stateful logic extreemly simple. Writing manual fetch logic for interdependent calls can be time consuming and error prone. I try to use the best tools available when approaching a given task.
+After some experimentation I decided to use the [React Query Module] (https://www.npmjs.com/package/react-query) to complete the project. React Query makes interdependent API calls with stateful logic extreemly simple. Writing manual fetch logic for interdependent calls can be time consuming and error prone. I try to use the best tools available when approaching a given task.
 
+To use the app, simply type a valid ip address into the input bar.
 
 https://user-images.githubusercontent.com/20464795/192447265-b39c68c2-288e-44b7-b0d2-b14d6cdef556.mov
 
