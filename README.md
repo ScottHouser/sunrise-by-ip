@@ -8,6 +8,11 @@ The MVP of this project took about 3 hours to complete. The full app including s
 
 After some exerimentation I decided to use the [React Query Module] (https://www.npmjs.com/package/react-query) to complete the project. React Querey makes interdependent API calls with stateful logic extreemly simple. Writing manual fetch logic for interdependent calls can be time consuming and error prone. I try to use the best tools available when approaching a given task.
 
+
+https://user-images.githubusercontent.com/20464795/192447265-b39c68c2-288e-44b7-b0d2-b14d6cdef556.mov
+
+
+
 ## Running the app
 
 in a new folder run `git clone https://github.com/ScottHouser/sunrise-by-ip.git`
