@@ -53,7 +53,7 @@ function DataFetcher() {
   return (
     <>
       <Form>
-        <Form.Group className="mb-3" controlId="formBasicEmail">
+        <Form.Group className="mb-3" controlId="formBasicIp">
           <Form.Label>Enter IP</Form.Label>
           <Form.Control value={ip} onChange={(e)=>{handleChange(e)}} placeholder="ip" />
         </Form.Group>
