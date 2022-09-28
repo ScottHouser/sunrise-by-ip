@@ -55,7 +55,7 @@ function DataFetcher() {
       <Form>
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Label>Enter IP</Form.Label>
-          <Form.Control value={ip} onChange={(e)=>{handleChange(e)}} type="email" placeholder="ip" />
+          <Form.Control value={ip} onChange={(e)=>{handleChange(e)}} placeholder="ip" />
         </Form.Group>
       </Form>
       <HalfSun
